@@ -131,23 +131,19 @@ section{
     display:inline-block
 }
 
-#horizontal{
-    width:821px;
-    height:509px;
-    
-
-    /*adding margin did NOT help
-    margin-left:785px;
-    margin-top:226px;
-    */
-
-    /*something is wrong with the image size and position, don't know how to fix it though */
-}
-
-/*
-did not help
-
 #vertical{
     width:658px;
     height:700px;
+
+    margin-left: 856px;
+    
+}
+
+#horizontal{
+    width:821px;
+    height:509px;
+
+    margin-left: 785px;
+    
+
 }
