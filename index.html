@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Circular Std don't exist on google fonts, did some research and Nunito should be similar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <header>
+        <!--For a unknown reason, the google font didn't get applied when i used an ID but it got applied as soon as i switched to using a class instead -->
+        <h3 class="logo">
+            Medi<span class="logoDot">.</span>
+        </h3>
+        
+        <nav class="navigation">
+            <a id="home">Home</a>
+            <a id="about">About</a>
+            <a id="blog">Blog</a>
+            <a id="contact">Contact</a>
+            <a id="signIn">Sign In</a>
+        </nav>
+        
+        <button id="headerButton">
+            Sign Up
+        </button>
+
+
+    </header>
     
 </body>
 </html>

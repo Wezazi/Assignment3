@@ -1,0 +1,62 @@
+.logo{
+    font-family: "Nunito", sans-serif;
+    margin-left: 95.25px;
+    margin-top: 40.61px;
+    color: #0A1B32;
+    display:inline-block;
+}
+
+.logoDot{
+    color: #824FF1;
+}
+
+.navigation{
+    color: #1B0A42;
+    font-family: "roboto";
+    display:inline-block;
+    margin-top: 24px;
+}
+
+#home{
+    /* The figma shows 45 x 24 px, the 24px is guaranteed to be margin top but the 45px doesn't seem to be relative to the body, maybe it's relative to the logo? 
+    Actually the main problem is that the anchors are in a new line. It's probably because h3 is block level, let's add display and set it to inline-block
+    I got really confused over why the anchor elements were still in a new line but realized that the nav element is block level too, so let's also set it to display inline-block
+    */
+
+    margin-left: 45px;
+}
+
+#about{
+    margin-left: 44px;
+}
+
+#blog{
+    margin-left: 33px;
+}
+
+#contact{
+    margin-left: 58px;
+}
+
+/* Why does the space between each ahanchor element not look accurate? i used the exact margin values from figma. i wasn't able to figure it out*/
+
+#signIn{
+    margin-left: 58px;
+    
+}
+
+button{
+    background-color: #824FF1;
+    color: #FFFFFF;
+}
+
+#headerButton{
+    height: 59.65px;
+    width: 120px;
+    border-radius:6px;
+    margin-left: 120px;
+    /*
+    why does setting a margin-top value on the button change the location of all header elements?
+    margin-top: 59px; 
+    */
+}
