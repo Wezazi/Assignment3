@@ -40,8 +40,13 @@
 
 /* Why does the space between each ahanchor element not look accurate? i used the exact margin values from figma. i wasn't able to figure it out*/
 
+
+/* i couldn't move sign in and the header button to the left side of the screen without using position:abosolute*/
 #signIn{
-    margin-left: 58px;
+    margin-left: 51px;
+    position:absolute;
+    left:1320.96px;
+    top:48px;
     
 }
 
@@ -56,7 +61,72 @@ button{
     border-radius:6px;
     margin-left: 120px;
     /*
-    why does setting a margin-top value on the button change the location of all header elements?
+    why does setting a margin-top value on the button change the location of all header elements? (this is only happened before i added position aboslute and the values.)
     margin-top: 59px; 
     */
+
+    position:absolute;
+    left: 1412.26px;
+    top: 30px;
+}
+
+
+.mainHeader{
+    font-family: "Ramaraja", serif;
+    font-size:72px;
+    width: 495px;
+    height:152px;
+    letter-spacing:2%;
+    line-height:76px;
+    text-align:left, top;
+    color:#1B0A42;
+    margin-left: 200px;
+
+    /*
+    adding margin makes the position innacurrate and also moves the paragraph element beneath it down.
+    margin-top: 280.71px;
+    */
+
+    /*
+    I don't know why it's doing newlines incorrectly
+    */
+}
+
+#leftP {
+    width: 590.46px;
+    height: 96px;
+    margin-left: 200px;
+    /*
+    adding margin top value makes the positioning innaccurate, why>
+    margin-top: 442.71px;
+    */
+    
+    line-height:32px;
+    letter-spacing:2%;
+    font-size:20px;
+}
+
+/* Just realized i had been mixing width and height values with margin top and margin-left values in both left p and main heade, i fixed it but should pay extra attention so i don't do it for the future elements*/
+
+#leftButton{
+    height:63.82px;
+    width:152px;
+    border-radius:6;
+    margin-left:200px;
+    /*
+    third time i realize margin-top ruins the position, can't be a coincidence.
+    margin-top:588.71px;
+    */
+}
+
+#leftButtonText{
+    line-height:32px;
+    letter-spacing:2%;
+    font-family: "roboto";
+    font-size:16px;
+    /* Not sure why my button text looks different*/
+}
+
+section{
+    display:inline-block
 }
